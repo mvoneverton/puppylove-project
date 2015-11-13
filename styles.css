@@ -1,0 +1,251 @@
+/********************************
+      Inherited Styles
+*********************************/
+
+html {
+    box-sizing: border-box;
+    color: #444;
+    font: 12pt 'Open Sans', Arial;
+    font-weight: 300;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    color: inherit;
+    font: inherit;
+}
+
+/***********************************
+      Defaults
+************************************/
+button {
+  border-radius: 5px;
+}
+/************************************
+  Helpers
+*************************************/
+
+
+/************************************
+      Layout
+*************************************/
+
+.panel > div {
+  width: 960px;
+  margin: 0 auto;
+  min-height: 500px;
+  position: relative;
+}
+
+.services {
+  background-color: #D7E1E7;
+  padding: 10px;
+}
+
+.primary-header {
+  min-height: 100px;
+  position: relative;
+}
+
+.primary-header .logo {
+  color: #fff;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+
+.primary-header .search {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+#search {
+  border: 1px solid rgba(255, 255, 255, 0.47);
+  background-color: rgba(34, 140, 150, 0);
+  padding: 5px;
+}
+
+.search button{
+  background-color: #EB4A04;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 5px;
+}
+
+.primary-nav {
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.47);
+  border-bottom: 1px solid rgba(255,255,255,0.47);
+}
+
+.primary-nav > a {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.tag-line {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
+.tag-line .slogan {
+  font: 28pt 'open-sans' Arial;
+  color: #fff;
+  font-weight: 300;
+}
+
+.tag-line p {
+  font: 12pt 'open-sans' Arial;
+  color: #FFFCFF;
+}
+
+/******************************
+        Components
+*******************************/
+
+.hero {
+  background: radial-gradient(rgba(0, 0, 255, 0.15), #048EA7), url("bg.jpg");
+}
+
+.logo > a {
+  text-decoration: none;
+  font: 34pt 'lobster' Arial;
+}
+
+.media-object {
+  display: flex;
+  padding: 5px;
+}
+
+.media-object .graphic {
+  width: 60px;
+  min-height: 60px;
+}
+
+.media-object .content {
+  flex: 1;
+  background-color: #E8F3F9;
+  font-size: 14px;
+  padding: 5px;
+}
+
+.media-object .dog-name {
+  color: #1E94D4;
+}
+
+.media-object .dog-name, .media-object p {
+  margin: 0;
+}
+
+.breakout {
+  text-align: center;
+}
+
+.breakout div {
+  display: inline-block;
+  background-color: #fff;
+  text-align: center;
+  font-family: 'open-sans' Arial;
+  transform: translateY(-20px);
+  width: 300px;
+  padding: 5px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.27);
+}
+
+.breakout .litter {
+  border-top: 2px solid #EA4903;
+}
+
+.breakout .food {
+  border-top: 2px solid #8BD342;
+}
+
+.breakout .sell {
+  border-top: 2px solid #1490D3;
+}
+
+.breakout * + * {
+  margin-left: 10px;
+}
+
+.breakout p {
+  font-size: 12px;
+}
+
+.breakout div button{
+  font-size: 10pt;
+  padding: 5px;
+  background-color: #fff;
+}
+
+.breakout .litter button {
+  border: 2px solid #EA4903;
+  color: #EA4903;
+}
+
+.breakout .food button {
+  border: 2px solid #8BD342;
+  color: #8BD342;
+}
+
+.breakout .sell button {
+  border: 2px solid #1490D3;
+  color: #1490D3;
+}
+
+.primary-content {
+  background-color: #fff;
+  display: flex;
+  min-height: 300px;
+  padding: 5px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.27);
+}
+
+aside.primary {
+  flex: 1;
+  padding: 5px;
+}
+
+section.primary {
+  width: 550px;
+}
+
+.puppy-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(33.33% -20px)
+}
+
+.tile {
+  margin: 10px;
+}
+
+.tile .graphic {
+  min-height: 150px;
+  width: 150px;
+}
+
+.tile .dog-caption {
+  background-color: #E2F0D6;
+  width: 150px;
+}
+
+.tile .dog-caption .dog-name {
+  background-color: #8AD243;
+  color: #468B34;
+  padding-left: 5px;
+}
+
+.tile .dog-caption p {
+  padding-left: 5px;
+  color: #49741B;
+  margin-top: 5px;
+}
